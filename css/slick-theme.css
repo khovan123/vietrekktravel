@@ -1,0 +1,127 @@
+/* SECTION HERO */
+.section-hero .slick-initialized .slick-slide {
+  margin: 0;
+}
+.slick-slider .slick-dots {
+  position: absolute;
+  bottom: 100px;
+  /* display: none !important; */
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+
+  display: inline-block;
+  margin: 0 1.6rem;
+  padding: 0;
+
+  cursor: pointer;
+  text-align: center;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+
+  display: block;
+
+  /* width: 20px;
+  height: 20px;
+  padding: 5px; */
+
+  cursor: pointer;
+
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover::before,
+.slick-dots li button:focus::before {
+  opacity: 1;
+  color: #000;
+}
+
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 1.2rem;
+  height: 1.2rem;
+  content: "";
+  text-align: center;
+
+  opacity: 0.25;
+  background-color: #fff;
+  border-radius: 50%;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li button:hover::before {
+  width: 1rem;
+  height: 1rem;
+  background-color: #00000085;
+  border: 0.2rem solid #fff;
+  transform: scale(1.5);
+}
+
+.slick-dots > li.slick-active button:hover::before,
+.slick-dots > li.slick-active button:focus::before,
+.slick-dots > li.slick-active button:active::before {
+}
+.slick-dots > li.slick-active button::before {
+  width: 1.2rem;
+  height: 1.2rem;
+  transform: scale(1.5);
+  background-color: #fff;
+  border: none;
+}
+/* SECTION TESTIMONIALS */
+.slick-initialized .slick-slide {
+  margin: 0 1.8rem;
+  /* margin-left: 3.2rem; */
+}
+
+button.slick-prev.slick-arrow::before,
+button.slick-next.slick-arrow::before {
+  font-family: "Inter", sans-serif;
+  content: "";
+  position: absolute;
+  font-size: 20px;
+  background: none;
+}
+button.slick-prev.slick-arrow::before {
+  content: "";
+}
+button.slick-next.slick-arrow::before {
+  content: "";
+}
+button.slick-prev.slick-arrow,
+button.slick-next.slick-arrow {
+  font-size: 2.4rem;
+  font-family: sans-serif;
+  color: #fff;
+  background-color: #00000059;
+  width: 4.5rem;
+  height: 7.5rem;
+  z-index: 5;
+}
+button.slick-prev.slick-arrow:active,
+button.slick-next.slick-arrow:active {
+  background-color: #000000a3;
+}
